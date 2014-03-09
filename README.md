@@ -13,3 +13,15 @@ with:
 
     wget -O - ftp://ftp.ensemblgenomes.org/pub/plants/release-17/fasta/zea_mays/dna/Zea_mays.AGPv2.17.dna.toplevel.fa.gz \
       | bioawk -c fastx '{print $name"\t"length($seq)"\tFALSE"}' > inst/extdata/Zea_mays.AGPv2.17.lengths.txt
+
+## Using this Package
+
+Install with:
+
+    R CMD INSTALL TxDb.Zmays.Ensembl.AGPv2.17
+
+Then, to use:
+
+    library(TxDb.Zmays.Ensembl.AGPv2.17)
+    txdb <- TxDb.Zmays.Ensembl.AGPv2.17
+    exons <- exonsBy(txdb, "gene")
