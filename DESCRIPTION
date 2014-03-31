@@ -3,6 +3,7 @@ Version: 0.1
 Title: Annotation package for TranscriptDb object(s)
 Description: Annotation databases generated from Ensembl by exposing these as TranscriptDb objects
 Author: Vince Buffalo
+Maintainer: Vince Buffalo <vsbuffalo+AAAAA@gmail.com>
 Depends: GenomicFeatures (>= 1.13.40)
 Imports: GenomicFeatures, AnnotationDbi
 License: Artistic-2.0
